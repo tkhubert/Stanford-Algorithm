@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		809484C61A7E965B00033582 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 809484C51A7E965B00033582 /* main.cpp */; };
+		809484D01A7E96BC00033582 /* Inversion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 809484CC1A7E96BC00033582 /* Inversion.cpp */; };
+		809484D11A7E96BC00033582 /* QuickSortComparisons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 809484CE1A7E96BC00033582 /* QuickSortComparisons.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		809484C21A7E965B00033582 /* StanfordAlgorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StanfordAlgorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		809484C51A7E965B00033582 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		809484CC1A7E96BC00033582 /* Inversion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Inversion.cpp; sourceTree = "<group>"; };
+		809484CD1A7E96BC00033582 /* Inversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Inversion.h; sourceTree = "<group>"; };
+		809484CE1A7E96BC00033582 /* QuickSortComparisons.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuickSortComparisons.cpp; sourceTree = "<group>"; };
+		809484CF1A7E96BC00033582 /* QuickSortComparisons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickSortComparisons.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,10 @@
 		809484C41A7E965B00033582 /* StanfordAlgorithm */ = {
 			isa = PBXGroup;
 			children = (
+				809484CC1A7E96BC00033582 /* Inversion.cpp */,
+				809484CD1A7E96BC00033582 /* Inversion.h */,
+				809484CE1A7E96BC00033582 /* QuickSortComparisons.cpp */,
+				809484CF1A7E96BC00033582 /* QuickSortComparisons.h */,
 				809484C51A7E965B00033582 /* main.cpp */,
 			);
 			path = StanfordAlgorithm;
@@ -119,6 +129,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				809484C61A7E965B00033582 /* main.cpp in Sources */,
+				809484D01A7E96BC00033582 /* Inversion.cpp in Sources */,
+				809484D11A7E96BC00033582 /* QuickSortComparisons.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +244,7 @@
 				809484CB1A7E965B00033582 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

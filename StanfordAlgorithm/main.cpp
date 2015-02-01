@@ -1,15 +1,28 @@
 //
 //  main.cpp
-//  StanfordAlgorithm
+//  AlgorithmsStanford
 //
-//  Created by Thomas Hubert on 01/02/2015.
+//  Created by Thomas Hubert on 24/01/2015.
 //  Copyright (c) 2015 Thomas Hubert. All rights reserved.
 //
 
 #include <iostream>
+#include "time.h"
+#include "Inversion.h"
+#include "QuickSortComparisons.h"
 
-int main(int argc, const char * argv[]) {
+using namespace std;
+
+int main(int argc, const char * argv[])
+{
+    clock_t t = clock();
+    
     // insert code here...
-    std::cout << "Hello, World!\n";
+    //Inversions::testClass();
+    QuickSortComparisons::testClass();
+    
+    t = clock() - t;
+    cout << "time to compute: "<< float(t)/CLOCKS_PER_SEC << endl;
+       
     return 0;
 }
