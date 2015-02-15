@@ -10,6 +10,7 @@
 #include "time.h"
 #include "Inversion.h"
 #include "QuickSortComparisons.h"
+#include "MinCutCompression.h"
 
 using namespace std;
 
@@ -19,7 +20,8 @@ int main(int argc, const char * argv[])
     
     // insert code here...
     //Inversions::testClass();
-    QuickSortComparisons::testClass();
+    //QuickSortComparisons::testClass();
+    MinCutCompression::testClass();
     
     t = clock() - t;
     cout << "time to compute: "<< float(t)/CLOCKS_PER_SEC << endl;

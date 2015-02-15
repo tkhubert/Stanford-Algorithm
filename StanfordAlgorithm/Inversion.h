@@ -28,13 +28,13 @@ public:
     static void testClass();
     
 private:
-    // methods
-    unsigned long bruteForce     (vector<int>& v) const;
-    unsigned long countInversions(vector<int>& v) const;
-    
     // members
     static const int MIN_SIZE=40;
     unsigned long              n;
+    
+    // methods
+    unsigned long bruteForce     (vector<int>& v) const;
+    unsigned long countInversions(vector<int>& v) const;
 };
 
 #endif /* defined(__AlgorithmsStanford__Inversion__) */

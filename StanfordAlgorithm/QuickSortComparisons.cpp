@@ -13,12 +13,18 @@ QuickSortComparisons::QuickSortComparisons(string filename, PivotRule _PR) :
 {
     ifstream file(filename);
     
-    vector<int> v;
-    int i;
-    while (file>>i)
-        v.push_back(i);
-    
-    n = countQSComparisons(v.begin(), v.end());
+    if (file.is_open())
+    {
+        vector<int> v;
+        int i;
+        while (file>>i)
+            v.push_back(i);
+        
+        n = countQSComparisons(v.begin(), v.end());
+        file.close();
+    }
+    else
+        throw "Could not open file: " + filename;
 }
 //
 QuickSortComparisons::QuickSortComparisons(vector<int>& v, PivotRule _PR) :

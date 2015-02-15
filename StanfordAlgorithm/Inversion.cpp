@@ -12,12 +12,18 @@ Inversions::Inversions(string filename)
 {
     ifstream file(filename);
     
-    vector<int> v;
-    int i;
-    while (file>>i)
-        v.push_back(i);
+    if (file.is_open())
+    {
+        vector<int> v;
+        int i;
+        while (file>>i)
+            v.push_back(i);
 
-    n = countInversions(v);
+        n = countInversions(v);
+        file.close();
+    }
+    else
+        throw "Could not open file: " + filename;
 }
 //
 Inversions::Inversions(vector<int>& v)
