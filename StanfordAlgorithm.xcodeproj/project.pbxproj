@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		806C3A781A915DDA00777E59 /* WUnionFind.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 806C3A761A915DDA00777E59 /* WUnionFind.cpp */; };
 		809484C61A7E965B00033582 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 809484C51A7E965B00033582 /* main.cpp */; };
 		809484D01A7E96BC00033582 /* Inversion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 809484CC1A7E96BC00033582 /* Inversion.cpp */; };
 		809484D11A7E96BC00033582 /* QuickSortComparisons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 809484CE1A7E96BC00033582 /* QuickSortComparisons.cpp */; };
@@ -27,8 +26,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		806C3A761A915DDA00777E59 /* WUnionFind.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WUnionFind.cpp; sourceTree = "<group>"; };
-		806C3A771A915DDA00777E59 /* WUnionFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WUnionFind.h; sourceTree = "<group>"; };
 		809484C21A7E965B00033582 /* StanfordAlgorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StanfordAlgorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		809484C51A7E965B00033582 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		809484CC1A7E96BC00033582 /* Inversion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Inversion.cpp; sourceTree = "<group>"; };
@@ -76,8 +73,6 @@
 				809484C51A7E965B00033582 /* main.cpp */,
 				80C497D31A8117BA00BF67F6 /* MinCutCompression.cpp */,
 				80C497D41A8117BA00BF67F6 /* MinCutCompression.h */,
-				806C3A761A915DDA00777E59 /* WUnionFind.cpp */,
-				806C3A771A915DDA00777E59 /* WUnionFind.h */,
 			);
 			path = StanfordAlgorithm;
 			sourceTree = "<group>";
@@ -139,7 +134,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				80C497D51A8117BA00BF67F6 /* MinCutCompression.cpp in Sources */,
-				806C3A781A915DDA00777E59 /* WUnionFind.cpp in Sources */,
 				809484C61A7E965B00033582 /* main.cpp in Sources */,
 				809484D01A7E96BC00033582 /* Inversion.cpp in Sources */,
 				809484D11A7E96BC00033582 /* QuickSortComparisons.cpp in Sources */,

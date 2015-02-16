@@ -20,6 +20,24 @@
 
 using namespace std;
 
+class WUnionFindCompression
+{
+public:
+    WUnionFindCompression(vector<vector<int> >& neighbors);
+    
+    int                count() const {return c;}
+    int                root        (int p);
+    int                connected   (int p, int q);
+    void               unite       (int p, int q);
+    const vector<int>& getNeighbors(int p);
+    
+private:
+    vector<vector<int> > neighbors;
+    vector<int>          parent;
+    vector<int>          size;
+    int                  c;
+};
+//
 class MinCutCompression
 {
 public:
@@ -31,17 +49,13 @@ public:
     
 private:
     // members
-    size_t               E, currE;
     size_t               V, currV;
     vector<vector<int> > adjList;
-    vector<int>          fused;
     
     int                  minCut;
     
     // methods
-    void findEdge(int& u, int& v, vector<vector<int> >& adj);
-    void contract(vector<vector<int> >& adj);
-    void contract(int u, int v, vector<vector<int> >& adj);
+    void contract(WUnionFindCompression& groups);
 };
 
 #endif /* defined(__StanfordAlgorithm__MinCutCompression__) */

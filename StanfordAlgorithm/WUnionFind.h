@@ -16,17 +16,7 @@ using namespace std;
 
 class WUnionFind
 {
-public:
-    WUnionFind(int n);
-    int  count() const {return c;}
-    int  root     (int p);
-    int  connected(int p, int q);
-    void unite    (int p, int q);
-    
-private:
-    vector<int> parent;
-    vector<int> size;
-    int         c;
+
     
 };
 
