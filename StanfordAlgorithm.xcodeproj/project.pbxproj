@@ -11,6 +11,7 @@
 		809484D01A7E96BC00033582 /* Inversion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 809484CC1A7E96BC00033582 /* Inversion.cpp */; };
 		809484D11A7E96BC00033582 /* QuickSortComparisons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 809484CE1A7E96BC00033582 /* QuickSortComparisons.cpp */; };
 		80C497D51A8117BA00BF67F6 /* MinCutCompression.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80C497D31A8117BA00BF67F6 /* MinCutCompression.cpp */; };
+		80DA5AC11A98DC1F006E77E6 /* StronglyConnectedComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80DA5ABF1A98DC1F006E77E6 /* StronglyConnectedComponent.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,8 @@
 		809484CF1A7E96BC00033582 /* QuickSortComparisons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickSortComparisons.h; sourceTree = "<group>"; };
 		80C497D31A8117BA00BF67F6 /* MinCutCompression.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MinCutCompression.cpp; sourceTree = "<group>"; };
 		80C497D41A8117BA00BF67F6 /* MinCutCompression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinCutCompression.h; sourceTree = "<group>"; };
+		80DA5ABF1A98DC1F006E77E6 /* StronglyConnectedComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StronglyConnectedComponent.cpp; sourceTree = "<group>"; };
+		80DA5AC01A98DC1F006E77E6 /* StronglyConnectedComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StronglyConnectedComponent.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,8 @@
 				809484C51A7E965B00033582 /* main.cpp */,
 				80C497D31A8117BA00BF67F6 /* MinCutCompression.cpp */,
 				80C497D41A8117BA00BF67F6 /* MinCutCompression.h */,
+				80DA5ABF1A98DC1F006E77E6 /* StronglyConnectedComponent.cpp */,
+				80DA5AC01A98DC1F006E77E6 /* StronglyConnectedComponent.h */,
 			);
 			path = StanfordAlgorithm;
 			sourceTree = "<group>";
@@ -133,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80DA5AC11A98DC1F006E77E6 /* StronglyConnectedComponent.cpp in Sources */,
 				80C497D51A8117BA00BF67F6 /* MinCutCompression.cpp in Sources */,
 				809484C61A7E965B00033582 /* main.cpp in Sources */,
 				809484D01A7E96BC00033582 /* Inversion.cpp in Sources */,
