@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8087B8651A9BE3C90021C209 /* Dijkstra.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8087B8631A9BE3C90021C209 /* Dijkstra.cpp */; };
 		809484C61A7E965B00033582 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 809484C51A7E965B00033582 /* main.cpp */; };
 		809484D01A7E96BC00033582 /* Inversion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 809484CC1A7E96BC00033582 /* Inversion.cpp */; };
 		809484D11A7E96BC00033582 /* QuickSortComparisons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 809484CE1A7E96BC00033582 /* QuickSortComparisons.cpp */; };
@@ -27,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8087B8631A9BE3C90021C209 /* Dijkstra.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Dijkstra.cpp; sourceTree = "<group>"; };
+		8087B8641A9BE3C90021C209 /* Dijkstra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dijkstra.h; sourceTree = "<group>"; };
 		809484C21A7E965B00033582 /* StanfordAlgorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StanfordAlgorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		809484C51A7E965B00033582 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		809484CC1A7E96BC00033582 /* Inversion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Inversion.cpp; sourceTree = "<group>"; };
@@ -78,6 +81,8 @@
 				80C497D41A8117BA00BF67F6 /* MinCutCompression.h */,
 				80DA5ABF1A98DC1F006E77E6 /* StronglyConnectedComponent.cpp */,
 				80DA5AC01A98DC1F006E77E6 /* StronglyConnectedComponent.h */,
+				8087B8631A9BE3C90021C209 /* Dijkstra.cpp */,
+				8087B8641A9BE3C90021C209 /* Dijkstra.h */,
 			);
 			path = StanfordAlgorithm;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 				80DA5AC11A98DC1F006E77E6 /* StronglyConnectedComponent.cpp in Sources */,
 				80C497D51A8117BA00BF67F6 /* MinCutCompression.cpp in Sources */,
 				809484C61A7E965B00033582 /* main.cpp in Sources */,
+				8087B8651A9BE3C90021C209 /* Dijkstra.cpp in Sources */,
 				809484D01A7E96BC00033582 /* Inversion.cpp in Sources */,
 				809484D11A7E96BC00033582 /* QuickSortComparisons.cpp in Sources */,
 			);

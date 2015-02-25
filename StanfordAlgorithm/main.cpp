@@ -12,6 +12,7 @@
 #include "QuickSortComparisons.h"
 #include "MinCutCompression.h"
 #include "StronglyConnectedComponent.h"
+#include "Dijkstra.h"
 
 using namespace std;
 
@@ -23,7 +24,8 @@ int main(int argc, const char * argv[])
     //Inversions::testClass();
     //QuickSortComparisons::testClass();
     //MinCutCompression::testClass();
-    SCC::testClass();
+    //SCC::testClass();
+    Dijkstra::testClass();
     
     t = clock() - t;
     cout << "time to compute: "<< float(t)/CLOCKS_PER_SEC << endl;
