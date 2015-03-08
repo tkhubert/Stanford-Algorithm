@@ -13,6 +13,8 @@
 #include "MinCutCompression.h"
 #include "StronglyConnectedComponent.h"
 #include "Dijkstra.h"
+#include "TwoSum.h"
+#include "MedianMaintenance.h"
 
 using namespace std;
 
@@ -25,7 +27,9 @@ int main(int argc, const char * argv[])
     //QuickSortComparisons::testClass();
     //MinCutCompression::testClass();
     //SCC::testClass();
-    Dijkstra::testClass();
+    //Dijkstra::testClass();
+    //TwoSum::testClass();
+    MedianMaintenance::testClass();
     
     t = clock() - t;
     cout << "time to compute: "<< float(t)/CLOCKS_PER_SEC << endl;

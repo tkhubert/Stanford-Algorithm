@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		805CDC3C1AAB48DD00A57304 /* TwoSum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 805CDC3A1AAB48DD00A57304 /* TwoSum.cpp */; };
+		805CDC3F1AAB7D9100A57304 /* MedianMaintenance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 805CDC3D1AAB7D9100A57304 /* MedianMaintenance.cpp */; };
 		8087B8651A9BE3C90021C209 /* Dijkstra.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8087B8631A9BE3C90021C209 /* Dijkstra.cpp */; };
 		809484C61A7E965B00033582 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 809484C51A7E965B00033582 /* main.cpp */; };
 		809484D01A7E96BC00033582 /* Inversion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 809484CC1A7E96BC00033582 /* Inversion.cpp */; };
@@ -28,6 +30,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		805CDC3A1AAB48DD00A57304 /* TwoSum.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TwoSum.cpp; sourceTree = "<group>"; };
+		805CDC3B1AAB48DD00A57304 /* TwoSum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoSum.h; sourceTree = "<group>"; };
+		805CDC3D1AAB7D9100A57304 /* MedianMaintenance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MedianMaintenance.cpp; sourceTree = "<group>"; };
+		805CDC3E1AAB7D9100A57304 /* MedianMaintenance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedianMaintenance.h; sourceTree = "<group>"; };
 		8087B8631A9BE3C90021C209 /* Dijkstra.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Dijkstra.cpp; sourceTree = "<group>"; };
 		8087B8641A9BE3C90021C209 /* Dijkstra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dijkstra.h; sourceTree = "<group>"; };
 		809484C21A7E965B00033582 /* StanfordAlgorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StanfordAlgorithm; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +89,10 @@
 				80DA5AC01A98DC1F006E77E6 /* StronglyConnectedComponent.h */,
 				8087B8631A9BE3C90021C209 /* Dijkstra.cpp */,
 				8087B8641A9BE3C90021C209 /* Dijkstra.h */,
+				805CDC3A1AAB48DD00A57304 /* TwoSum.cpp */,
+				805CDC3B1AAB48DD00A57304 /* TwoSum.h */,
+				805CDC3D1AAB7D9100A57304 /* MedianMaintenance.cpp */,
+				805CDC3E1AAB7D9100A57304 /* MedianMaintenance.h */,
 			);
 			path = StanfordAlgorithm;
 			sourceTree = "<group>";
@@ -149,6 +159,8 @@
 				8087B8651A9BE3C90021C209 /* Dijkstra.cpp in Sources */,
 				809484D01A7E96BC00033582 /* Inversion.cpp in Sources */,
 				809484D11A7E96BC00033582 /* QuickSortComparisons.cpp in Sources */,
+				805CDC3C1AAB48DD00A57304 /* TwoSum.cpp in Sources */,
+				805CDC3F1AAB7D9100A57304 /* MedianMaintenance.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
