@@ -19,7 +19,7 @@ TwoSum::TwoSum(string filename)
         while (file>>i)
             v.push_back(i);
         
-        n = countNbTwoSumHash(v);
+        n = countNbTwoSumSort(v);
         
         file.close();
     }
@@ -27,86 +27,65 @@ TwoSum::TwoSum(string filename)
         throw "Could not open file: " + filename;
 }
 //
-int TwoSum::countNbTwoSum(vector<long>& v)
-{
-    sort(v.begin(), v.end() );
-    v.erase(unique(v.begin(), v.end()), v.end() );
-    
-    size_t s = 0;
-    size_t e = v.size()-1;
-    set<int> sFound;
-    
-    while (s<e)
-    {
-        long val = v[s] + v[e];
-        if (val<-10000)
-            ++s;
-        else if (val>10000)
-            --e;
-        else
-        {
-            sFound.insert(int(val));
-            
-            size_t t = e-1;
-            while (s<t)
-            {
-                long val2 = v[s] + v[t];
-                if (val2>=-10000)
-                {
-                    sFound.insert(int(val2));
-                    --t;
-                }
-            }
-            s++;
-        }
-    }
-    
-    return int(sFound.size());
-}
-//
-int TwoSum::hash(long x) const
-{
-    return ((x % nbBuckets) + nbBuckets) % nbBuckets;
-}
-//
 int TwoSum::countNbTwoSumHash(const vector<long> &v)
 {
     hashTable.resize(nbBuckets);
     for (size_t i=0; i<v.size(); ++i)
     {
-        int h = hash(v[i]);
+        int h = hash(v[i]/DT);
         hashTable[h].push_back(v[i]);
     }
     
-    int count = 0;
-    for (int t=-10000; t<=10000; ++t)
+    set<int> sT;
+    for (size_t i=0; i<v.size(); ++i)
     {
-        bool found = false;
-        for (int i=0; i<v.size(); ++i)
+        int h1 = hash((Tmin-v[i])/DT);
+        const list<long>& l1 = hashTable[h1];
+        for (list<long>::const_iterator itr=l1.begin(); itr!=l1.end(); ++itr)
         {
-            long val = t-v[i];
-            int  h   = hash(val);
-            
-            const list<long>& l = hashTable[h];
-            if (!l.empty())
-            {
-                for (list<long>::const_iterator itr=l.begin(); itr!=l.end(); ++itr)
-                {
-                    if (*itr==val && *itr!=v[i])
-                    {
-                        count++;
-                        found = true;
-                        break;
-                    }
-                }
-            }
-            if (found)
-                break;
+            long t = *itr+v[i];
+            if (t>=Tmin && t<=Tmax && v[i]!=*itr)
+                sT.insert(int(t));
+        }
+        
+        int h2 = hash((Tmin-v[i])/DT+1);
+        const list<long>& l2 = hashTable[h2];
+        for (list<long>::const_iterator itr=l2.begin(); itr!=l2.end(); ++itr)
+        {
+            long t = *itr+v[i];
+            if (t>=Tmin && t<=Tmax && v[i]!=*itr)
+                sT.insert(int(t));
         }
     }
-    return count;
+    return int(sT.size());
 }
-
+//
+int TwoSum::countNbTwoSumSort(vector<long>& v)
+{
+    sort(v.begin(), v.end());
+    v.erase(unique(v.begin(), v.end()), v.end());
+    
+    vector<long>::iterator s = v.begin();
+    vector<long>::iterator e = v.end();
+    vector<long>::iterator i;
+    
+    set<int> sT;
+    while (s<e)
+    {
+        long x = *s;
+        i = lower_bound(s, e, Tmin-x);
+        e = upper_bound(s, e, Tmax-x);
+        
+        for (vector<long>::iterator itr=i; itr!=e; ++itr)
+        {
+            if (x!=*itr)
+                sT.insert(int(*itr+x));
+        }
+        s++;
+    }
+    return int(sT.size());
+}
+//
 void TwoSum::testClass()
 {
     string dir = "/Users/tkhubert/Documents/Etude/11.Algorithms1Stanford/HW/6.TwoSum/";

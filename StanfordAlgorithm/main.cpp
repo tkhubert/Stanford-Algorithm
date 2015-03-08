@@ -28,8 +28,8 @@ int main(int argc, const char * argv[])
     //MinCutCompression::testClass();
     //SCC::testClass();
     //Dijkstra::testClass();
-    //TwoSum::testClass();
-    MedianMaintenance::testClass();
+    TwoSum::testClass();
+    //MedianMaintenance::testClass();
     
     t = clock() - t;
     cout << "time to compute: "<< float(t)/CLOCKS_PER_SEC << endl;

@@ -31,15 +31,17 @@ public:
 private:
     //members
     static const int nbBuckets = 1000133;
+    static const int Tmin      = -10000;
+    static const int Tmax      =  10000;
+    static const int DT        =  Tmax-Tmin;
     
     int                 n;
     vector<list<long> > hashTable;
     
-    
     //methods
-    int hash(long x) const;
+    int hash(long x) const {return ((x % nbBuckets) + nbBuckets) % nbBuckets;};
     int countNbTwoSumHash(const vector<long>& v);
-    int countNbTwoSum(vector<long>& v);
+    int countNbTwoSumSort(vector<long>& v);
     
 };
 
