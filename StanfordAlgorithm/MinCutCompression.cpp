@@ -147,7 +147,7 @@ void MinCutCompression::contract(WUnionFindCompression& groups)
 //
 void MinCutCompression::testClass()
 {
-    string dir = "/Users/tkhubert/Documents/Etude/11.Algorithms1Stanford/HW/3.MinCutKarger/";
+    string dir = "/Users/tkhubert/Documents/Etude/11.AlgorithmsStanford/HW/3.MinCutKarger/";
     string file0 = dir + "kargerMinCut.txt";
     string file1 = dir + "8.txt";
     string file2 = dir + "8bis.txt";

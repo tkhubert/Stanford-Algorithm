@@ -88,7 +88,7 @@ int TwoSum::countNbTwoSumSort(vector<long>& v)
 //
 void TwoSum::testClass()
 {
-    string dir = "/Users/tkhubert/Documents/Etude/11.Algorithms1Stanford/HW/6.TwoSum/";
+    string dir = "/Users/tkhubert/Documents/Etude/11.AlgorithmsStanford/HW/6.TwoSum/";
     string file0 = dir + "test0.txt";
     string file1 = dir + "test1.txt";
     string file2 = dir + "2sum.txt";

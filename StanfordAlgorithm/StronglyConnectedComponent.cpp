@@ -169,7 +169,7 @@ void SCC::computeSCC()
 //
 void SCC::testClass()
 {
-    string dir = "/Users/tkhubert/Documents/Etude/11.Algorithms1Stanford/HW/4.StronglyConnectedComponents/";
+    string dir = "/Users/tkhubert/Documents/Etude/11.AlgorithmsStanford/HW/4.StronglyConnectedComponents/";
     string file0 = dir + "test1.txt";
     string file1 = dir + "test2.txt";
     string file2 = dir + "test3.txt";

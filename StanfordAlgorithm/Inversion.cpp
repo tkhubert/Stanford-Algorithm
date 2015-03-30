@@ -87,7 +87,7 @@ unsigned long Inversions::countInversions(vector<int>& v) const
 //
 void Inversions::testClass()
 {
-    string dir = "/Users/tkhubert/Documents/Etude/11.Algorithms1Stanford/HW/1.Inversions/";
+    string dir = "/Users/tkhubert/Documents/Etude/11.AlgorithmsStanford/HW/1.Inversions/";
     string file0 = dir + "INPUT500.txt";
     string file1 = dir + "INPUT1000.txt";
     string file2 = dir + "INPUT2000.txt";

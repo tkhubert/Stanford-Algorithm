@@ -16,38 +16,10 @@
 #include <list>
 #include <fstream>
 #include <sstream>
+#include "Heap.h"
 
 using namespace std;
 
-class Heap
-{
-public:
-    Heap(int N);
-    
-    bool contains  (int u) const {return qp[u]!=-1;}
-    int  priorityOf(int u) const {return priority[qp[u]];}
-    int  getMin()          const {return pq[0];}
-    
-    void deleteMin();
-    void deleteElement(int u);
-    void insertElement(int u, int p);
-    void chgPriorityOf(int u, int p);
-    
-private:
-    // members
-    int size;
-    int sizeMax;
-    
-    vector<int> pq;
-    vector<int> qp;
-    vector<int> priority;
-    
-    // methods
-    void exch(int idx0, int idx1);
-    void swim(int idx);
-    void sink(int idx);
-};
-//
 class Edge
 {
 public:

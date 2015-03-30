@@ -15,6 +15,8 @@
 #include "Dijkstra.h"
 #include "TwoSum.h"
 #include "MedianMaintenance.h"
+#include "Jobs.h"
+#include "PrimMST.h"
 
 using namespace std;
 
@@ -28,8 +30,10 @@ int main(int argc, const char * argv[])
     //MinCutCompression::testClass();
     //SCC::testClass();
     //Dijkstra::testClass();
-    TwoSum::testClass();
+    //TwoSum::testClass();
     //MedianMaintenance::testClass();
+    //Jobs::testClass();
+    PrimsMST::testClass();
     
     t = clock() - t;
     cout << "time to compute: "<< float(t)/CLOCKS_PER_SEC << endl;

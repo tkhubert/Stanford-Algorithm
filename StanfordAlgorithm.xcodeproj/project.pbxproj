@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		802FE7301AC8632200313A50 /* Jobs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 802FE72E1AC8632200313A50 /* Jobs.cpp */; };
+		802FE7331AC886CF00313A50 /* Heap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 802FE7311AC886CF00313A50 /* Heap.cpp */; };
+		802FE7361AC8894D00313A50 /* PrimMST.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 802FE7341AC8894D00313A50 /* PrimMST.cpp */; };
 		805CDC3C1AAB48DD00A57304 /* TwoSum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 805CDC3A1AAB48DD00A57304 /* TwoSum.cpp */; };
 		805CDC3F1AAB7D9100A57304 /* MedianMaintenance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 805CDC3D1AAB7D9100A57304 /* MedianMaintenance.cpp */; };
 		8087B8651A9BE3C90021C209 /* Dijkstra.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8087B8631A9BE3C90021C209 /* Dijkstra.cpp */; };
@@ -30,6 +33,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		802FE72E1AC8632200313A50 /* Jobs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Jobs.cpp; sourceTree = "<group>"; };
+		802FE72F1AC8632200313A50 /* Jobs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jobs.h; sourceTree = "<group>"; };
+		802FE7311AC886CF00313A50 /* Heap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Heap.cpp; sourceTree = "<group>"; };
+		802FE7321AC886CF00313A50 /* Heap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Heap.h; sourceTree = "<group>"; };
+		802FE7341AC8894D00313A50 /* PrimMST.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PrimMST.cpp; sourceTree = "<group>"; };
+		802FE7351AC8894D00313A50 /* PrimMST.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrimMST.h; sourceTree = "<group>"; };
 		805CDC3A1AAB48DD00A57304 /* TwoSum.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TwoSum.cpp; sourceTree = "<group>"; };
 		805CDC3B1AAB48DD00A57304 /* TwoSum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoSum.h; sourceTree = "<group>"; };
 		805CDC3D1AAB7D9100A57304 /* MedianMaintenance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MedianMaintenance.cpp; sourceTree = "<group>"; };
@@ -87,8 +96,14 @@
 				80C497D41A8117BA00BF67F6 /* MinCutCompression.h */,
 				80DA5ABF1A98DC1F006E77E6 /* StronglyConnectedComponent.cpp */,
 				80DA5AC01A98DC1F006E77E6 /* StronglyConnectedComponent.h */,
+				802FE72E1AC8632200313A50 /* Jobs.cpp */,
+				802FE72F1AC8632200313A50 /* Jobs.h */,
 				8087B8631A9BE3C90021C209 /* Dijkstra.cpp */,
 				8087B8641A9BE3C90021C209 /* Dijkstra.h */,
+				802FE7341AC8894D00313A50 /* PrimMST.cpp */,
+				802FE7351AC8894D00313A50 /* PrimMST.h */,
+				802FE7311AC886CF00313A50 /* Heap.cpp */,
+				802FE7321AC886CF00313A50 /* Heap.h */,
 				805CDC3A1AAB48DD00A57304 /* TwoSum.cpp */,
 				805CDC3B1AAB48DD00A57304 /* TwoSum.h */,
 				805CDC3D1AAB7D9100A57304 /* MedianMaintenance.cpp */,
@@ -153,7 +168,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				802FE7301AC8632200313A50 /* Jobs.cpp in Sources */,
 				80DA5AC11A98DC1F006E77E6 /* StronglyConnectedComponent.cpp in Sources */,
+				802FE7361AC8894D00313A50 /* PrimMST.cpp in Sources */,
 				80C497D51A8117BA00BF67F6 /* MinCutCompression.cpp in Sources */,
 				809484C61A7E965B00033582 /* main.cpp in Sources */,
 				8087B8651A9BE3C90021C209 /* Dijkstra.cpp in Sources */,
@@ -161,6 +178,7 @@
 				809484D11A7E96BC00033582 /* QuickSortComparisons.cpp in Sources */,
 				805CDC3C1AAB48DD00A57304 /* TwoSum.cpp in Sources */,
 				805CDC3F1AAB7D9100A57304 /* MedianMaintenance.cpp in Sources */,
+				802FE7331AC886CF00313A50 /* Heap.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

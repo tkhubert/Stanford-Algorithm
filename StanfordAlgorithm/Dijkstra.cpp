@@ -8,94 +8,6 @@
 
 #include "Dijkstra.h"
 
-Heap::Heap(int N) : size(0), sizeMax(N)
-{
-    pq.resize(N);
-    qp.resize(N);
-    priority.resize(N);
-    
-    fill(qp.begin(), qp.end(), -1);
-}
-//
-void Heap::exch(int idx0, int idx1)
-{
-    int u0 = pq[idx0];
-    int p0 = priority[idx0];
-    
-    pq[idx0]       = pq[idx1];
-    pq[idx1]       = u0;
-    qp[pq[idx0]]   = idx0;
-    qp[pq[idx1]]   = idx1;
-    priority[idx0] = priority[idx1];
-    priority[idx1] = p0;
-}
-//
-void Heap::swim(int idx)
-{
-    while (idx>0 && priority[idx]<priority[idx/2])
-    {
-        exch(idx, idx/2);
-        idx = idx/2;
-    }
-}
-//
-void Heap::sink(int idx)
-{
-    while (2*idx+1<size)
-    {
-        int newIdx = 2*idx+1;
-        if (newIdx+1<size && priority[newIdx]>priority[newIdx+1])
-            newIdx++;
-        
-        if (priority[idx]<=priority[newIdx])
-            break;
-        
-        exch(idx, newIdx);
-        idx = newIdx;
-    }
-}
-//
-void Heap::insertElement(int u, int p)
-{
-    size++;
-    pq[size-1]       = u;
-    qp[u]            = size-1;
-    priority[size-1] = p;
-
-    swim(size-1);
-}
-//
-void Heap::deleteMin()
-{
-    int umin = pq[0];
-    
-    exch(0, size-1);
-    size--;
-    sink(0);
-    
-    qp[umin] = -1;
-}
-//
-void Heap::deleteElement(int u)
-{
-    int idx = qp[u];
-    exch(idx, size-1);
-    size--;
-    swim(idx);
-    sink(idx);
-    
-    qp[u] = -1;
-}
-//
-void Heap::chgPriorityOf(int u, int p)
-{
-    //int idx = qp[u];
-    deleteElement(u);
-    insertElement(u, p);
-    //sink(idx);
-    //swim(idx);
-}
-//
 Dijkstra::Dijkstra(string filename)
 {
     ifstream file(filename);
@@ -184,7 +96,7 @@ void Dijkstra::ComputeShortestPath(int s)
 //
 void Dijkstra::testClass()
 {
-    string dir = "/Users/tkhubert/Documents/Etude/11.Algorithms1Stanford/HW/5.Dijkstra/";
+    string dir = "/Users/tkhubert/Documents/Etude/11.AlgorithmsStanford/HW/5.Dijkstra/";
     string file0 = dir + "small.txt";
     string file1 = dir + "medium.txt";
     string file2 = dir + "dijkstraData.txt";
@@ -205,5 +117,4 @@ void Dijkstra::testClass()
             cout << res[i][j] << ",";
         cout << endl;
     }
-
 }

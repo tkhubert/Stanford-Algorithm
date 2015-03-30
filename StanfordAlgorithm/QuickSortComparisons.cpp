@@ -94,7 +94,7 @@ long QuickSortComparisons::countQSComparisons(vector<int>::iterator start, vecto
 //
 void QuickSortComparisons::testClass()
 {
-    string dir = "/Users/tkhubert/Documents/Etude/11.Algorithms1Stanford/HW/2.QuickSortComparisons/";
+    string dir = "/Users/tkhubert/Documents/Etude/11.AlgorithmsStanford/HW/2.QuickSortComparisons/";
     string file0 = dir + "10.txt";
     string file1 = dir + "100.txt";
     string file2 = dir + "1000.txt";
